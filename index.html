@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Nida Shahid Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/cef2780389.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: cneter;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 34px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.01rem;
+        }
+
+        main hr {
+            border: 0;
+            background-color: white;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 10px 0;
+
+
+        }
+
+        .firstsection>div {
+            width: 40%;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+            margin: 40px;
+        }
+
+        .rightsection img {
+            width: 90%;
+            max-width: 100%;
+
+
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        .textgray {
+            color: gray;
+        }
+
+        #element {
+            color: blueviolet
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondsection .box {
+            background-color: white;
+            width: 72vw;
+            height: 2px;
+            margin: 283px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 70px;
+            width: 1px;
+            background-color: white;
+            margin: 0 162px;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 31px;
+            width: 150px;
+
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            top: 35px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+
+        }
+
+        footer {
+            background-color: #0e0d0d;
+            color: #fff;
+            padding: 30px 0;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .footer-section h2 {
+            color: #fff;
+            font-size: 1.5em;
+        }
+
+        .footer-section p {
+            color: #ccc;
+        }
+
+        .footer-section a {
+            display: block;
+            color: #ccc;
+            text-decoration: none;
+            margin-bottom: 5px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        /* Add more styles as needed */
+
+
+        .contact-section {
+            padding: 2rem;
+            background-color: rgb(0, 0, 33);
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .contact-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .contact-intro {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 40%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            font-size: 1rem;
+        }
+
+        .contact-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        .contact-button:hover {
+            background-color: #0067cc;
+        }
+
+        @media only screen and (max-width: 767px) {
+            /* Mobile styles here */
+        }
+        .btn.btn2 {
+            display: inline-block;
+            background: #f2f4f5;
+            color: black;
+        }
+        .btn:hover {
+            background: #0067cc;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Nida's Portfolio </div>
+            <div class="right"></div>
+            <ul id="sidemenu">
+                <li><a href="/">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="https://www.linkedin.com/in/nida-shahid-836209276/details/certifications/">Certificates</a>
+                </li>
+                <li><a href="#contact">Contact Me</a> </li>
+                <i class="fa-solid fa-x" style="color: #5a636a;" onclick="closemenu()"></i></i>
+            </ul>
+            <i class="fa-solid fa-bars" style="color: #5a636a;" onclick="openmenu()"></i>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Nida</span>.
+                <div>and I am a </div>
+                <span id="element"></span>
+
+            </div>
+            <div class="rightsection">
+                <img src="1.png" alt="">
+            </div>
+        </section>
+
+
+        <!-- ----------------------about---------------------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="girl.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About-ME</h1>
+                        <p>
+                            I'm passionate about improving how software is developed and delivered. I want to bring
+                            teams together, enhance communication, and automate processes. Even though I'm new, I'm
+                            dedicated to learning, especially in areas like code integration, testing, deployment, and
+                            infrastructure management. I'm excited to contribute to making development more efficient,
+                            embracing DevOps principles, and creating a culture of constant improvement. I'm ready to
+                            quickly pick up new skills and thrive in a dynamic DevOps environment.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li>
+                                    <a>Automation Skills:</a>
+                                    <p>
+                                        Scripting languages<span> (e.g., Python, Bash)</span> and automation tools
+                                        <span>(e.g., Ansible)</span> to automate manual processes.
+                                    </p>
+                                </li>
+                                <li>
+                                    <a>Continuous Integration/Continuous Deployment<span> (CI/CD)</span>:</a>
+                                    <p>
+                                        CI/CD pipelines <span>(e.g., Jenkins)</span> to automate the building, testing,
+                                        and deployment of software.
+                                    </p>
+                                </li>
+                                <li>
+                                    <a>Containerization and Orchestration:</a>
+                                    <p>
+                                        Knowledge of containerization platforms such as <span>Docker</span> and
+                                        container orchestration tools like <span>Kubernetes</span> for efficient
+                                        deployment and scaling of applications.
+                                    </p>
+                                </li>
+                                <li>
+                                    <a>Infrastructure as Code (IaC):</a>
+                                    <p>
+                                        Ability to define and manage infrastructure using code, employing tools like
+                                        <span>Terraform</span> or CloudFormation.
+                                    </p>
+                                </li>
+                                <li>
+                                    <a>Collaboration and Communication:</a>
+                                    <p>
+                                        Strong interpersonal and communication skills to foster collaboration between
+                                        <span>development</span> and <span>operations</span> teams.
+                                    </p>
+                                </li>
+                                </li>
+                                <li>
+                                    <a>Version Control:</a>
+                                    <p>
+                                        Proficient in using version control systems like <span>Git</span> to manage and
+                                        track changes in code.
+                                    </p>
+                                </li>
+                                <li>
+                                    <a>Monitoring and Logging:</a>
+                                    <p>
+                                        Monitoring tools <span>(e.g., Prometheus)</span> and log management systems
+                                        <span>(e.g., ELK stack)</span> for maintaining system health and
+                                        troubleshooting.
+                                    </p>
+                                </li>
+                                <li>
+                                    <a>Cloud Computing:</a>
+                                    <p>
+                                        Familiarity with cloud platforms <span>(e.g., AWS)</span> and the ability to
+                                        deploy and manage applications in the cloud.
+                                    </p>
+                                </li>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li>
+                                    <a>Local school</a>
+                                    <p>
+                                        <span>Matric</span> in 2021.
+                                    </p>
+                                </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <hr>
+        <section class="secondsection" id="services">
+            <span class="textgray">What I have done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="dev.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci ex excepturi, fuga saepe et
+                        ipsam facere totam sunt dignissimos tenetur ullam nemo natus ollitia hic deleniti recusandae.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="dev.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci ex excepturi, fuga saepe et
+                        ipsam facere totam sunt dignissimos tenetur ullam nemo natus ollitia hic deleniti recusandae.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="dev.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci ex excepturi, fuga saepe et
+                        ipsam facere totam sunt dignissimos tenetur ullam nemo natus ollitia hic deleniti recusandae.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="dev.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci ex excepturi, fuga saepe et
+                        ipsam facere totam sunt dignissimos tenetur ullam nemo natus ollitia hic deleniti recusandae.
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section>
+            <div>
+                <div></div>
+            </div>
+        </section>
+
+    </main>
+    <section>
+
+    </section>
+
+
+    <!-- -------------------contac me----------------------------------------------------------------------------------- -->
+
+    <section class="contact-section" id="contact">
+        <h2 class="contact-title">Let's Connect!</h2>
+        <p class="contact-intro">I'm always open to new projects and collaborations. Feel free to contact me using the
+            form below.</p>
+        <form action="contact.php" method="post">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Write your message here"></textarea>
+            </div>
+            <button type="submit" class="contact-button">Send Message</button>
+        </form>
+    </section>
+
+
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>Nida's Portfolio</h2>
+                <p>Get Quick Links.</p>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact</h2>
+                <p>Email: nida.ideal@gmail.com</p>
+                <p>Phone: (92) 3227270220</p>
+                <div>
+                    <a href="nida-resume.pdf" download="" class="btn btn2">Download-CV</a>
+                </div>
+            </div>
+            <div class="footer-section social">
+                <h2>Follow Me</h2>
+                <a href="#" target="_blank">Twitter</a>
+                <a href="https://www.linkedin.com/mynetwork/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/nida-ss" target="_blank">GitHub</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Nida. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i> Passionate</i> ', "AI", 'DevOps Engineer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove('active-link');
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabname).classList.add('active-tab');
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwsISrJ6UE9fswP7by1c_cwNJjr6Q4MqGtb_IiPdgeBxBnFTe9KizQ18D4JARWyAAmtyg/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+
+</body>
+
+</html>
